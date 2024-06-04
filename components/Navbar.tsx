@@ -41,18 +41,20 @@ function Navbar({ className }: { className?: string }) {
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
       <Menu setActive={setActive}>
-      <HoverBorderGradient
-        containerClassName="rounded-full"
-        as="button"
-        className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
-      >
-        <TradeMateLogo/>
-        <span>TradeMate</span>
-      </HoverBorderGradient>
-        <Button className="items-center gap-2 rounded-full bg-blue-700 px-3 text-sm/4 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-black-600 data-[open]:bg-gray-700 data-[focus]:outline-1 data-[focus]:outline-white">
-        Web App
-        </Button>
-        <Button className="items-center gap-2 rounded-full bg-blue-700 px-3 text-sm/4 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-black-600 data-[open]:bg-gray-700 data-[focus]:outline-1 data-[focus]:outline-white">
+        <HoverBorderGradient
+          containerClassName="rounded-full"
+          as="button"
+          className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+        >
+          <TradeMateLogo/>
+          <span>TradeMate</span>
+        </HoverBorderGradient>
+        <Button
+          as="a"
+          href="https://t.me/trader_mate_bot"
+          target="_blank"
+          className="items-center gap-2 rounded-full bg-blue-700 px-3 text-sm/4 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-black-600 data-[open]:bg-gray-700 data-[focus]:outline-1 data-[focus]:outline-white"
+        >
           Telegram Bot
         </Button>
       </Menu>
